@@ -11,6 +11,7 @@ int main(int args,char * argv[])
 	//创建子进程
 	pid_t pid = fork();
 
+
 	if (pid < 0) //fork失败的情况
 	{
 		perror("fork error");
