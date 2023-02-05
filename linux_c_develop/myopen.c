@@ -51,7 +51,7 @@ int main3(int argc, char* arg1[])
 	//ssize_t read(int fd, void *buf, size_t count);
 	char buf[1024];
 	memset(buf, 0x00, sizeof(buf));
-	int n = read(fd, buf, sizeof(buf));
+	ssize_t n = read(fd, buf, sizeof(buf));
 	if (n < 0) {
 		printf("read error\n");
 		return -1;

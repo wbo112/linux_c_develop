@@ -75,11 +75,28 @@
   <ImportGroup Label="PropertySheets" />
   <PropertyGroup Label="UserMacros" />
   <ItemGroup>
+    <ClCompile Include="mydup.c" />
+    <ClCompile Include="mydup2.c" />
+    <ClCompile Include="myexecl.c" />
+    <ClCompile Include="myfcntl.c" />
+    <ClCompile Include="myfork1.c" />
+    <ClCompile Include="myfork2.c" />
+    <ClCompile Include="mylseek.c" />
     <ClCompile Include="myopen.c" />
+    <ClCompile Include="myopendir.c" />
+    <ClCompile Include="mystat.c" />
+    <ClCompile Include="mywait.c" />
+    <ClCompile Include="mywaitpid.c" />
+    <ClCompile Include="myzomble.c" />
     <ClCompile Include="offsetof.c" />
+    <ClCompile Include="orphan.c" />
     <ClCompile Include="unix_server.c" />
   </ItemGroup>
-  <ItemDefinitionGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <CLanguageStandard>c11</CLanguageStandard>
+    </ClCompile>
+  </ItemDefinitionGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets" />
 </Project>
