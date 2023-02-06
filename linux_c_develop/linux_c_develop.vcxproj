@@ -84,6 +84,9 @@
     <ClCompile Include="mylseek.c" />
     <ClCompile Include="myopen.c" />
     <ClCompile Include="myopendir.c" />
+    <ClCompile Include="mypipe1.c" />
+    <ClCompile Include="mypipe2.c" />
+    <ClCompile Include="mypipe_copy.c" />
     <ClCompile Include="mystat.c" />
     <ClCompile Include="mywait.c" />
     <ClCompile Include="mywaitpid.c" />

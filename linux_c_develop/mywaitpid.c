@@ -6,7 +6,7 @@
 #include <unistd.h>
 #include <sys/wait.h>
 
-int main(int args,char * argv[])
+int main19(int args,char * argv[])
 {
 	//创建子进程
 	pid_t pid = fork();
