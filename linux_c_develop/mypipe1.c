@@ -43,7 +43,7 @@ int main21()
 
 		char buf[64];
 		memset(buf, 0x00, sizeof(buf));
-		int n = read(fd[0], buf, sizeof(buf));
+		ssize_t n = read(fd[0], buf, sizeof(buf));
 		printf("read over, n==[%d], buf==[%s]\n", n, buf);
 
 	}

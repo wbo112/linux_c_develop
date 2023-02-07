@@ -59,6 +59,7 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
     <UseDebugLibraries>true</UseDebugLibraries>
+    <ConfigurationType>Application</ConfigurationType>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
     <UseDebugLibraries>false</UseDebugLibraries>
@@ -79,11 +80,18 @@
     <ClCompile Include="mydup2.c" />
     <ClCompile Include="myexecl.c" />
     <ClCompile Include="myfcntl.c" />
+    <ClCompile Include="myfifo_read.c" />
+    <ClCompile Include="myfifo_write.c" />
     <ClCompile Include="myfork1.c" />
     <ClCompile Include="myfork2.c" />
     <ClCompile Include="mylseek.c" />
+    <ClCompile Include="mymmap.c" />
+    <ClCompile Include="mymmap_anony.c" />
+    <ClCompile Include="mymmap_read.c" />
+    <ClCompile Include="mymmap_write.c" />
     <ClCompile Include="myopen.c" />
     <ClCompile Include="myopendir.c" />
+    <ClCompile Include="myopen_fork.c" />
     <ClCompile Include="mypipe1.c" />
     <ClCompile Include="mypipe2.c" />
     <ClCompile Include="mypipe_copy.c" />
@@ -97,7 +105,7 @@
   </ItemGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
-      <CLanguageStandard>c11</CLanguageStandard>
+      <CLanguageStandard>gnu11</CLanguageStandard>
     </ClCompile>
   </ItemDefinitionGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

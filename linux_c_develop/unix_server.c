@@ -49,7 +49,7 @@ int main1()
 	}
 	printf("client->[%s]\n", client.sun_path);
 
-	int n;
+	ssize_t n;
 	char buf[1024];
 
 	while (1)

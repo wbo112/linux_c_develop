@@ -6,7 +6,7 @@
 #include <sys/wait.h>
 #include <fcntl.h>
 
-int main()
+int main23()
 {
 	//创建管道
 	//int pipe(int pipefd[2]);
@@ -33,7 +33,7 @@ int main()
 
 	char buf[64];
 	memset(buf, 0x00, sizeof(buf));
-	int n = read(fd[0], buf, sizeof(buf)); //现在默认不阻塞?
+	ssize_t n = read(fd[0], buf, sizeof(buf)); //现在默认不阻塞?
 	printf("read over, n==[%d], buf==[%s]\n", n, buf);
 
 	return 0;

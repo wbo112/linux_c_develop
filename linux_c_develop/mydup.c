@@ -32,7 +32,7 @@ int main8(int argc, char* argv1[])
 	//使用newfd读文件
 	char buf[64];
 	memset(buf, 0x00, sizeof(buf));
-	int n = read(newfd, buf, sizeof(buf));
+	ssize_t n = read(newfd, buf, sizeof(buf));
 	printf("read over: n==[%d], buf==[%s]\n", n, buf);
 
 	//关闭文件
