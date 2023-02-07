@@ -24,7 +24,7 @@ int main29()
 	int len = lseek(fd, 0, SEEK_END);
 
 	//建立共享映射区
-	void* addr = mmap(NULL, len, PROT_READ | PROT_WRITE, MAP_SHARED, fd, 0); 
+	void* addr = mmap(NULL, len, PROT_READ | PROT_WRITE, MAP_SHARED, fd, 0); //len是映射区域大小
 	if (addr == MAP_FAILED)
 	{
 		perror("mmap error");
