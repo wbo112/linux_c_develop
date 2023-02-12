@@ -9,7 +9,7 @@
 #include <sys/stat.h>
 #include <sys/mman.h>
 
-int main()
+int main30()
 {
 	//使用mmap函数建立共享映射区
 	//void *mmap(void *addr, size_t length, int prot, int flags,

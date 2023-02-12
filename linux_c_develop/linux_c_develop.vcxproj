@@ -76,6 +76,8 @@
   <ImportGroup Label="PropertySheets" />
   <PropertyGroup Label="UserMacros" />
   <ItemGroup>
+    <ClCompile Include="myalarm.c" />
+    <ClCompile Include="myalarm_count.c" />
     <ClCompile Include="mydup.c" />
     <ClCompile Include="mydup2.c" />
     <ClCompile Include="myexecl.c" />
@@ -84,6 +86,9 @@
     <ClCompile Include="myfifo_write.c" />
     <ClCompile Include="myfork1.c" />
     <ClCompile Include="myfork2.c" />
+    <ClCompile Include="myfork_loop.c" />
+    <ClCompile Include="myitimer.c" />
+    <ClCompile Include="mykill.c" />
     <ClCompile Include="mylseek.c" />
     <ClCompile Include="mymmap.c" />
     <ClCompile Include="mymmap_anony.c" />
@@ -95,6 +100,14 @@
     <ClCompile Include="mypipe1.c" />
     <ClCompile Include="mypipe2.c" />
     <ClCompile Include="mypipe_copy.c" />
+    <ClCompile Include="mypip_brother.c" />
+    <ClCompile Include="mypthread1.c" />
+    <ClCompile Include="myraise.c" />
+    <ClCompile Include="mysigaction.c" />
+    <ClCompile Include="mysigchld.c" />
+    <ClCompile Include="mysignal.c" />
+    <ClCompile Include="mysigset.c" />
+    <ClCompile Include="mysigusr.c" />
     <ClCompile Include="mystat.c" />
     <ClCompile Include="mywait.c" />
     <ClCompile Include="mywaitpid.c" />
@@ -107,6 +120,9 @@
     <ClCompile>
       <CLanguageStandard>gnu11</CLanguageStandard>
     </ClCompile>
+    <Link>
+      <LibraryDependencies>pthread;%(LibraryDependencies)</LibraryDependencies>
+    </Link>
   </ItemDefinitionGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets" />
